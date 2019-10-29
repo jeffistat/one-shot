@@ -94,7 +94,7 @@ what is the p-value?
 
 explain the result, can the result be generalized?
 According to Chi-Square statistic we can see the p-value is .2143 = 21.43 %. Unfortanely, we cannot accept the null hypothesis, but "we can fail to reject the null hypothesis."
-We can conclude this information because the p-value was .05= 5% or higher.
+We can conclude this information because the p-value was .05= 5% or higher. We cannot generalized the results to all majors in all universities. 
 
 <!--
 push results to your github account, turn in the URL
