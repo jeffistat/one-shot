@@ -48,7 +48,7 @@ names(UCDdataframe)
 <!--  describe analysis methods here 
 what are the variable types, and indicate gaphical, numerical, and inferential methods appropriate
 for this question  !--> 
-Both variables are categorical in this data. We will use graphs to display the knowlendge we learn in  the previous classes. The vaiables that we are focusing on are major(liberal or non liberal) and seat (front,back or middle). I used a bar graph to indicate the data.
+Both variables are categorical in this data. We will use graphs to display the knowlendge we learn in  the previous classes. The variables that we are focusing on are major(liberal or non liberal) and seat (front,back or middle). I used a bar graph to indicate the data.
 The numerical tool was a cross tab table. The inferential method I used was Chi-squared test.
 
 
@@ -65,7 +65,7 @@ barchartGC(~seat+major, data=UCDdataframe, main='seat and major', type='percent'
 ```
 
 Explain what the graph shows
-This graphs demostrates that non-liberal students are more evenly dispense in class room seating preference. However, according to the graph liberal arts students prefer to be in the front row. 
+This graphs demonstrates that non-liberal students are more evenly dispense in class room seating preference. However, according to the graph liberal arts students prefer to be in the front row. 
 
 **Numerical summary**
 put numerical summary here
@@ -76,7 +76,7 @@ rowPerc(table1)
 ```
 
 Explain what the numeric summary says
-The numerical summary displays that student who major in liberal arts Sit in front almost as much as they do in the back or middle. 22.09 students sit in the middle & back is almost equal to student who front 21.95. The data demostrates that non liberal study are more balance to there seating preference compard to liberal art students. 
+The numerical summary displays that student who major in liberal arts Sit in front almost as much as they do in the back or middle. 22.09 students sit in the middle & back is almost equal to student who front 21.95. The data demonstrates that non liberal study are more balance to there seating preference compard to liberal art students. 
 
 ## Inferential Results
 put the inferential test for the the null hypothesis here
@@ -93,8 +93,8 @@ what is the p-value?
 <!-- explain-- is there evidence that certain majors tend to sit in particular areas of the class?  Can the results of this test be generalized to all majors in all universities? !-->
 
 explain the result, can the result be generalized?
-According to Chi-Square statistic we can see the p-value is .2143 = 21.43 %. Unfortanely, we cannot accept the null hypothesis, but "we can fail to reject the null hypothesis."
-We can conclude this information because the p-value was .05= 5% or higher. We cannot generalized the results to all majors in all universities. 
+According to Chi-Square statistic we can see the p-value is .2143 = 21.43 %. "We fail to reject the null hypothesis."
+We can conclude this information because the p-value was .05 = 5% or higher. We cannot generalized the results to all majors in all universities. 
 
 <!--
 push results to your github account, turn in the URL
