@@ -1,0 +1,109 @@
+---
+title: "Student Sit In"
+author: "Jeff Roderick"
+date: "10/28/2019"
+output: 
+  html_document:
+    toc: true
+    number_sectons: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# ONE SHOT assignment!
+this is an extra credit assignment, must be completed Monday Oct 28, turn-in closes at midnight!
+
+## Problem statement: 
+Students at UCD- is there a relation between where one sits and one's major? 
+
+## Introduction  
+
+<!-- where is the data found?  Is this an experiment or an observational study?  !-->
+
+Data from this study came from... 
+It came from a study at UC Davis with mulitple variables out of 173 students. The vaiables that we are focusing on are major(liberal or non liberal) and seat (front,back or middle).
+
+
+```{r include=FALSE, echo=FALSE}
+library(tigerstats)
+data(ucdavis1)
+
+```
+
+$H_0$: there is no relationship between one's major and where one sits in a class   
+$H_A$: where one sits in class and one's major are related  
+
+<!-- Get the data: !-->
+
+names of the data in the data frame
+
+```{r echo=FALSE}
+UCDdataframe = data.frame(seat=ucdavis1$Seat, major=ucdavis1$class, data=ucdavis1)
+names(UCDdataframe)
+```
+## Methods
+
+<!--  describe analysis methods here 
+what are the variable types, and indicate gaphical, numerical, and inferential methods appropriate
+for this question  !--> 
+Both variables are categorical in this data. We will use graphs to display the knowlendge we learn in  the previous classes. 
+
+
+## Data summary
+
+**Graphical summary**
+put the graphic description of the data here
+
+```{r}
+
+barchartGC(~seat+major, data=UCDdataframe, main='seat and major', type='percent', xlab= 'seat preference')
+
+
+```
+
+Explain what the graph shows
+This graphs demostrates that non-liberal students are more evenly dispense in class room seating preference. However, according to the graph liberal arts students prefer to be in the front row. 
+
+**Numerical summary**
+put numerical summary here
+
+```{r}
+table1= xtabs(~seat+major, data=UCDdataframe)
+rowPerc(table1)
+```
+
+Explain what the numeric summary says
+The numerical summary displays that student who major in liberal arts Sit in front almost as much as they do in the back or middle. 22.09 students sit in the middle & back is almost equal to student who front 21.95. The data demostrates that non liberal study are more balance to there seating preference comparted to the liberal students. 
+
+## Inferential Results
+put the inferential test for the the null hypothesis here
+
+```{r}
+chisqtestGC(table1)
+```
+
+what is the p-value?
+
+## Results and conclusions
+
+<!-- explain-- is there evidence that certain majors tend to sit in particular areas of the class?  Can the results of this test be generalized to all majors in all universities? !-->
+
+explain the result, can the result be generalized?
+According to Chi-Square statistic we can see the p-value is .2143 = 21.43 %. Unfortanely, we cannot accept the null hypothesis, but "we can fail to reject the null hypothesis."
+We can conclude this information because the p-value was .05= 5% or higher.
+
+<!--
+push results to your github account, turn in the URL
+
+--OR--
+
+If you did not fork my repo to your github account,
+create a repository in your github account for this project, get the URL for that repo and 
+(in the terminal window..)
+
+$git remote add origin URL_of_your_github_repo
+$git push -u origin master
+
+!-->
