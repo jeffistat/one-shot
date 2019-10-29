@@ -23,7 +23,7 @@ Students at UCD- is there a relation between where one sits and one's major?
 <!-- where is the data found?  Is this an experiment or an observational study?  !-->
 
 Data from this study came from... 
-UC Davis with mulitple variables out of 173 students. It waS A observation study because the subject were just observed in there natural habitats. 
+UC Davis with mulitple variables out of 173 students. It is an observation study because the subject were just observed in there natural habitats. 
 
 
 ```{r include=FALSE, echo=FALSE}
