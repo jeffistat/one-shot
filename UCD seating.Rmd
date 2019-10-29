@@ -23,7 +23,7 @@ Students at UCD- is there a relation between where one sits and one's major?
 <!-- where is the data found?  Is this an experiment or an observational study?  !-->
 
 Data from this study came from... 
-It came from a study at UC Davis with mulitple variables out of 173 students. The vaiables that we are focusing on are major(liberal or non liberal) and seat (front,back or middle).
+UC Davis with mulitple variables out of 173 students. It waS A observation study because the subject were just observed in there natural habitats. 
 
 
 ```{r include=FALSE, echo=FALSE}
@@ -48,7 +48,8 @@ names(UCDdataframe)
 <!--  describe analysis methods here 
 what are the variable types, and indicate gaphical, numerical, and inferential methods appropriate
 for this question  !--> 
-Both variables are categorical in this data. We will use graphs to display the knowlendge we learn in  the previous classes. 
+Both variables are categorical in this data. We will use graphs to display the knowlendge we learn in  the previous classes. The vaiables that we are focusing on are major(liberal or non liberal) and seat (front,back or middle). I used a bar graph to indicate the data.
+The numerical tool was a cross tab table. The inferential method I used was Chi-squared test.
 
 
 ## Data summary
@@ -75,7 +76,7 @@ rowPerc(table1)
 ```
 
 Explain what the numeric summary says
-The numerical summary displays that student who major in liberal arts Sit in front almost as much as they do in the back or middle. 22.09 students sit in the middle & back is almost equal to student who front 21.95. The data demostrates that non liberal study are more balance to there seating preference comparted to the liberal students. 
+The numerical summary displays that student who major in liberal arts Sit in front almost as much as they do in the back or middle. 22.09 students sit in the middle & back is almost equal to student who front 21.95. The data demostrates that non liberal study are more balance to there seating preference compard to liberal art students. 
 
 ## Inferential Results
 put the inferential test for the the null hypothesis here
@@ -85,6 +86,7 @@ chisqtestGC(table1)
 ```
 
 what is the p-value?
+.2173 > .05
 
 ## Results and conclusions
 
